@@ -79,11 +79,25 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-12 text-center gradient-text">Projelerim</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-background/50 backdrop-blur-sm p-8 rounded-xl shadow-lg hover-scale animate-fade-in" style={{animationDelay: '0.1s'}}>
-              <h3 className="font-bold text-xl mb-4 text-primary">Proje 1</h3>
+              <h3 className="font-bold text-xl mb-4 text-primary">Portfolyo</h3>
               <p className="text-foreground/80 mb-4">Proje açıklaması buraya gelecek.</p>
               <div className="flex gap-4">
-                <a href="#" className="text-sm text-primary hover:text-primary-dark transition-colors">Demo</a>
-                <a href="#" className="text-sm text-primary hover:text-primary-dark transition-colors">GitHub</a>
+                <a 
+                  href="https://portfolyo-tau-bay.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-sm text-primary hover:text-primary-dark transition-colors"
+                >
+                  Demo
+                </a>
+                <a 
+                  href="https://github.com/seherakyel/Portfoy" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-sm text-primary hover:text-primary-dark transition-colors"
+                >
+                  GitHub
+                </a>
               </div>
             </div>
             <div className="bg-background/50 backdrop-blur-sm p-8 rounded-xl shadow-lg hover-scale animate-fade-in" style={{animationDelay: '0.2s'}}>
