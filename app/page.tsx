@@ -38,8 +38,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-8 animate-slide-in">
           <h2 className="text-3xl font-bold mb-8 text-center gradient-text">Hakkımda</h2>
           <p className="text-lg leading-relaxed text-foreground/90 bg-background/50 backdrop-blur-sm p-6 rounded-xl shadow-lg">
-            Ben Seher Akyel, 20 yaşındayım ve Türkiye'de yaşıyorum. Şu an yazılım geliştirme öğreniyorum.
-          
+            Ben Seher Akyel, 20 yaşındayım ve Türkiye&apos;de yaşıyorum. Şu an yazılım geliştirme öğreniyorum.
           </p>
         </div>
       </section>
