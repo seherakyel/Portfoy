@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --primary: #6366f1;
+  --primary-dark: #4f46e5;
+  --secondary: #ec4899;
+  --accent: #8b5cf6;
+  --gray-light: #f8fafc;
+  --gray-dark: #374151;
+  
+  /* Yeni Section Renkleri */
+  --hero-bg: linear-gradient(135deg, #6366f120, #ec489920);
+  --about-bg: linear-gradient(135deg, #0ea5e920, #6366f120);
+  --skills-bg: linear-gradient(135deg, #ec489920, #8b5cf620);
+  --projects-bg: linear-gradient(135deg, #8b5cf620, #0ea5e920);
+  --contact-bg: linear-gradient(135deg, #6366f120, #ec489920);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f172a;
+    --foreground: #f1f5f9;
+    --primary: #818cf8;
+    --primary-dark: #6366f1;
+    --secondary: #f472b6;
+    --accent: #a78bfa;
+    --gray-light: #1e293b;
+    --gray-dark: #cbd5e1;
+    
+    /* Koyu Tema Section Renkleri */
+    --hero-bg: linear-gradient(135deg, #6366f140, #ec489940);
+    --about-bg: linear-gradient(135deg, #0ea5e940, #6366f140);
+    --skills-bg: linear-gradient(135deg, #ec489940, #8b5cf640);
+    --projects-bg: linear-gradient(135deg, #8b5cf640, #0ea5e940);
+    --contact-bg: linear-gradient(135deg, #6366f140, #ec489940);
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', sans-serif;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.4s ease-out forwards;
+}
+
+.hover-scale {
+  transition: transform 0.2s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Yeni Gradient Arka Plan Stilleri */
+.hero-gradient {
+  background-image: var(--hero-bg);
+}
+
+.about-gradient {
+  background-image: var(--about-bg);
+}
+
+.skills-gradient {
+  background-image: var(--skills-bg);
+}
+
+.projects-gradient {
+  background-image: var(--projects-bg);
+}
+
+.contact-gradient {
+  background-image: var(--contact-bg);
+}
